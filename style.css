@@ -1,5 +1,5 @@
 * {
-  margin: 15px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -25,7 +25,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem,15%;
+    padding: 4rem 15%;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.3);
@@ -40,7 +40,7 @@ html {
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    margin-left: 5rem;
+  
 }
 .logo:hover
 {
@@ -72,10 +72,11 @@ span{
   color: white;
   border: none;
   cursor: pointer;
+  font-weight: 600;
   letter-spacing: 1px;
   white-space: nowrap;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-right: 5rem;
+  
 }
 
 .gra:hover {
