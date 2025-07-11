@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 15px;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -15,23 +15,22 @@
 html {
   font-size: 60%;
   overflow-x: hidden;
+  background-color: var(--bg-color);
 }
-html{
-    font-size: 100%;
-    overflow-x: hidden;
-}
+
 .header
 {
     position:fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 4rem,15%;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
+    width: 100%;    
     z-index: 1000;
 }
 .logo
@@ -41,6 +40,7 @@ html{
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    margin-left: 5rem;
 }
 .logo:hover
 {
@@ -48,4 +48,37 @@ html{
 }
 span{
     background: linear-gradient(270deg,#DF8908 10%,#ff1d15 100%);
+    background-clip: text;
+    color: transparent;
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+
+}
+.gra {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 5rem;
+}
+
+.gra:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 100, 50, 0.5);
 }
