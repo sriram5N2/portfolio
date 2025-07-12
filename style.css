@@ -208,3 +208,6 @@ section
   box-shadow: 0 0 25px var(--main-color),
     0 0 50px rgba(255, 100, 50, 0.5);
 }
+.btn a{
+  color: black;
+}
