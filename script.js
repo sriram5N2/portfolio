@@ -1,18 +1,4 @@
 
-
-  function toggleReadMore() {
-    const content = document.getElementById('readMoreContent');
-    const btn = document.querySelector('.readbtn a');
-
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
-      btn.textContent = 'Read More';
-    } else {
-      content.style.display = 'block';
-      btn.textContent = 'Read Less';
-    }
-  }
-
   const menuIcon = document.getElementById('menu-icon');
   const navbar = document.getElementById('navbar');
 
@@ -21,4 +7,18 @@
     menuIcon.classList.toggle('open');
   });
 
+function toggleRead() {
+  const dots = document.getElementById("dots");
+  const more = document.getElementById("more");
+  const btn = document.getElementById("readbtn");
 
+  if (more.style.display === "none") {
+    more.style.display = "inline";
+    dots.style.display = "none";
+    btn.innerText = "Read Less";
+  } else {
+    more.style.display = "none";
+    dots.style.display = "inline";
+    btn.innerText = "Read More";
+  }
+}

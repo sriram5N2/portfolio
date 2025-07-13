@@ -872,3 +872,40 @@ section
   margin-top: 2rem;
   display: inline-block;
 }
+/* Default: Show navbar, hide hamburger (for laptops/desktops) */
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* On smaller screens (tablet & mobile) — max-width 991px */
+@media (max-width: 991px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--second-bg-color);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    z-index: 999;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 3rem;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 1001;
+  }
+}
