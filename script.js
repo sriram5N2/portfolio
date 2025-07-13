@@ -28,6 +28,7 @@ function toggleRead() {
     let letter = 0;
     let isDeleting = false;
     const speed = 100;
+    const deletingSpeed = 250;   
     const delay = 1500;
     const target = document.getElementById("typing");
 
