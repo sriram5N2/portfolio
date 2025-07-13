@@ -22,3 +22,35 @@ function toggleRead() {
     btn.innerText = "Read More";
   }
 }
+
+ const roles = ["Web Developer ", "Competitive Programmer "];
+    let current = 0;
+    let letter = 0;
+    let isDeleting = false;
+    const speed = 100;
+    const delay = 1500;
+    const target = document.getElementById("typing");
+
+    function typeWriter() {
+      const currentText = roles[current];
+      if (isDeleting) {
+        target.textContent = currentText.substring(0, letter--);
+      } else {
+        target.textContent = currentText.substring(0, letter++);
+      }
+
+      if (!isDeleting && letter === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeWriter, delay);
+        return;
+      }
+
+      if (isDeleting && letter === 0) {
+        isDeleting = false;
+        current = (current + 1) % roles.length;
+      }
+
+      setTimeout(typeWriter, isDeleting ? 60 : speed);
+    }
+
+    window.onload = typeWriter;
