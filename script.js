@@ -1,9 +1,4 @@
-const menuIcon = document.getElementById('menu-icon');
-const navbar = document.querySelector('.navbar');
 
-menuIcon.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-});
 
   function toggleReadMore() {
     const content = document.getElementById('readMoreContent');
@@ -17,4 +12,13 @@ menuIcon.addEventListener('click', () => {
       btn.textContent = 'Read Less';
     }
   }
+
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.getElementById('navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menuIcon.classList.toggle('open');
+  });
+
 
