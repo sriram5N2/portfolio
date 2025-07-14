@@ -17,6 +17,14 @@ html {
   overflow-x: hidden;
   background-color: var(--bg-color);
 }
+.header a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.project .btn a {
+  color: var(--text-color);
+  text-decoration: none;
+}
 
 .header
 {
@@ -154,6 +162,8 @@ section
     0 0 100px rgba(255, 100, 50, 0.3);
 
 }
+
+
 .social-icons a{
   display: inline-flex;
   justify-content: center;
