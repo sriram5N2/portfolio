@@ -45,7 +45,8 @@
       </div>
 
       <div class="btngrp">
-        <a href="#" class="btn">Hire Me</a>
+        <a href="mailto:hharshavardhan974@gmail.com?subject=Hire%20Request&body=Hi%20Harsha,%20I%20am%20interested%20in%20working%20with%20you." class="btn">Hire Me</a>
+
         <a href="#contact" class="btn">Contact</a>
       </div>
 
@@ -65,29 +66,30 @@
       <h1>About <span>Me</span></h1>
 
       <!-- Always visible part -->
-  <p>
-    I am a passionate competitive programmer and MERN stack web developer with a strong foundation in Data
-    Structures, Algorithms, and full-stack application development.
-    On the competitive programming side, I’ve solved over 1200+ problems on platforms like CodeChef (3 ★ rated) and
-    Codeforces (Pupil).
-    <span id="dots">...</span>
-    <span id="more" style="display: none;">
-      Every bug, WA, and edge case has been a lesson in patience, problem-solving, and resilience.
-      I believe that each failure is just one step closer to success.
+      <p>
+        I am a passionate competitive programmer and MERN stack web developer with a strong foundation in Data
+        Structures, Algorithms, and full-stack application development.
+        On the competitive programming side, I’ve solved over 1200+ problems on platforms like CodeChef (3 ★ rated) and
+        Codeforces (Pupil).
+        <span id="dots">...</span>
+        <span id="more" style="display: none;">
+          Every bug, WA, and edge case has been a lesson in patience, problem-solving, and resilience.
+          I believe that each failure is just one step closer to success.
 
-      As a developer, I specialize in the MERN stack (MongoDB, Express.js, React, Node.js), building responsive and
-      functional web applications. I enjoy turning ideas into real-world solutions and continually exploring modern
-      web technologies to stay current.
+          As a developer, I specialize in the MERN stack (MongoDB, Express.js, React, Node.js), building responsive and
+          functional web applications. I enjoy turning ideas into real-world solutions and continually exploring modern
+          web technologies to stay current.
 
-      Whether it's debugging a tricky algorithm or building a new feature, I bring the same level of focus, curiosity,
-      and persistence to everything I do.
-    </span>
-  </p>
+          Whether it's debugging a tricky algorithm or building a new feature, I bring the same level of focus,
+          curiosity,
+          and persistence to everything I do.
+        </span>
+      </p>
 
-  <!-- Toggle button -->
-  <div class="readbtn">
-    <a href="javascript:void(0);" id="readbtn" onclick="toggleRead()">Read More</a>
-  </div>
+      <!-- Toggle button -->
+      <div class="readbtn">
+        <a href="javascript:void(0);" id="readbtn" onclick="toggleRead()">Read More</a>
+      </div>
 
 
       <div class="codingprofiles">
@@ -192,17 +194,19 @@
 
   <section class="contactme" id="contact">
     <h1>Contact <span>ME</span></h1>
-    <div class="formcontainer">
+    <form action="https://formsubmit.co/hharshavardhan974@gmail.com" method="POST" class="formcontainer">
       <div class="form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type='text' placeholder="Your Phone Number" required>
-        <input type="text" placeholder="Subject" required>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type='text' name="phone" placeholder="Your Phone Number" required>
+        <input type="text" name="subject" placeholder="Subject" required>
       </div>
       <div class="message">
-        <textarea placeholder="Your Message" required></textarea>
-        <button class="btn">Send Message</button>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
       </div>
+    </form>
+
 
 
     </div>
@@ -211,7 +215,7 @@
   <footer class="footer">
     <ul class="list">
       <div class="social-icons">
-         <a href="https://github.com/harshavardhan314" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://github.com/harshavardhan314" target="_blank"><i class='bx bxl-github'></i></a>
         <a href="https://www.instagram.com/harsha_vardhan_112" target="_blank"><i class='bx bxl-instagram'></i></a>
         <a href="https://www.linkedin.com/in/harsha-vardhan-71aa622b6/" target="_blank"><i
             class='bx bxl-linkedin'></i></a>
